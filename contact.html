@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me - My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+    main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #690d60;
+}
+
+/* FORM STYLES */
+form {
+  background-color: #ffffffdd;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(255, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+form label {
+  font-weight: bold;
+  color: #6b0be1;
+}
+
+form input,
+form textarea {
+  padding: 0.8rem;
+  border: 2px solid #f195bd;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #ff6f61;
+  box-shadow: 0 0 6px rgba(255, 111, 97, 0.4);
+  outline: none;
+}
+
+form textarea {
+  min-height: 100px;
+  max-height: 250px;
+}
+
+form button {
+  padding: 0.9rem;
+  background-color: #b2b2e6;
+  color: rgb(255, 198, 198);
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #c861ff;
+}
+</style>  
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile/Skills</a></li>
+            <li><a href="projects.html">Project</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="number">Phone No:</label>
+        <input type="number" id="number" name="number" required>
+
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" required></textarea>
+         
+        <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>

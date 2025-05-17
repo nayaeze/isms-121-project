@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f3d3ff, #fddfff);
+    color: #7c777700;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: ffffffdd;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #640a0a;
+  }
+  
+  /* PROJECT PAGE STYLING */
+  main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  main h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #1a1a2e;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .project {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    width: 30%;
+    min-width: 280px;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    background-image: url(abstract-flat-green-and-blue-background-free-vector.jpg);
+  }
+  
+  .project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .project p {
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .project:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  }
+</style>  
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile/Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+        <main>
+            <h2>My Projects</h2>
+            <div class="projects-container"></div>
+            <div class="project"><img src="c:\Users\Amanda\Downloads\download.png" style="width: 30%; height: auto;" alt="1st Project"><p>this is a simple code created on java code.</p></div>
+            <div class="project"><img src="c:\Users\Amanda\Downloads\yt start up\LOGO03.png" style="width: 30%; height: auto;" alt="2nd Project"><p>this is an example of my work on canva .</p></div>
+            <div class="project"><img src="" style="width: 30%; height: auto;" alt="3rd Project"><p>this is a product of my work on canva.</p></div>
+        </main>
+    </nav>
+</body>
